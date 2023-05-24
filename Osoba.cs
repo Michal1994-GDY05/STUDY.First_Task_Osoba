@@ -9,6 +9,7 @@ public class First_Task_Osoba
     public static void Main(string[] args)
     {
         Osoba osoba = new Osoba("ada Kolan");
+        Osoba osoba2 = new Osoba("ada Kolan");
         osoba.DataUrodzenia = new DateTime(1990, 5, 15);
         osoba.DataŚmierci = new DateTime(2000, 12, 31);
 
