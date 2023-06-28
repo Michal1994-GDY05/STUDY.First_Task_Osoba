@@ -8,16 +8,15 @@ public class First_Task_Osoba
 {
     public static void Main(string[] args)
     {
-        Osoba osoba = new Osoba("ada Kolan");
-        Osoba osoba2 = new Osoba("ada Kolan");
-        osoba.DataUrodzenia = new DateTime(1990, 5, 15);
-        osoba.DataŚmierci = new DateTime(2000, 12, 31);
+        Osoba osoba1 = new Osoba("Jan Kowalski");
+        osoba1.DataUrodzenia = new DateTime(1990, 2, 11);
+        osoba1.DataŚmierci = new DateTime(2000, 12, 31);
 
-        Console.WriteLine(osoba.Imię);
-        Console.WriteLine(osoba.Nazwisko);
-        Console.WriteLine(osoba.DataUrodzenia?.ToString("yyyy-MM-dd"));
-        Console.WriteLine(osoba.DataŚmierci?.ToString("yyyy-MM-dd"));
-        Console.WriteLine(osoba.Wiek?.TotalDays);
-        Console.WriteLine(osoba.ImięNazwisko);
+        Osoba osoba2 = new Osoba("Anna Nowak");
+        osoba2.DataUrodzenia = new DateTime(1985, 5, 10);
+
+        Console.WriteLine(osoba1.ToString());
+        Console.WriteLine(osoba2.ToString());
+
     }
 }

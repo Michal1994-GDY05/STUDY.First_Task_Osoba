@@ -86,5 +86,16 @@ public class Osoba
                 nazwisko = split[split.Length - 1];
             }
         }
+
+
+    }
+    public override string ToString()
+    {
+        return $"Imię i nazwisko: {ImięNazwisko}\n" +
+               $"Imię: {Imię}\n" +
+               $"Nazwisko: {Nazwisko}\n" +
+               $"Data urodzenia: {DataUrodzenia?.ToShortDateString()}\n" +
+               $"Data śmierci: {DataŚmierci?.ToShortDateString()}\n" +
+               $"Wiek: {Wiek?.TotalDays} dni\n";
     }
 }
